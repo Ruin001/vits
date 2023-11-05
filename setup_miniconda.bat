@@ -53,6 +53,7 @@ if errorlevel 1 (
     exit /b
 )
 
+pip freeze > requirements.txt
 echo Installing packages from requirements.txt...
 pip install -r requirements.txt
 
